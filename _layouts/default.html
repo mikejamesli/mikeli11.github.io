@@ -3,28 +3,69 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			 <!-- Bootstrap core CSS -->
+			 <link href="/css/bootstrap.css" rel="stylesheet">
+
+			 <!-- Custom styles for this template -->
+			 <link href="/css/main.css" rel="stylesheet">
+		 
+			 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+			 <script src="assets/js/hover.zoom.js"></script>
+			 <script src="assets/js/hover.zoom.conf.js"></script>
 			{% include analytics.html %}
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:mikejlyh@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/mikeli11">github.com/mikeli11</a></li>
-				</ul>
-			</footer>
+			 <div class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">STANLEY</a>
+				  </div>
+				  <div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/cv">CV</a></li>
+						<li><a href="/blog">Blog</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+		  
+			  <div id="ww">
+				<div class="container">
+					{{ content }}
+					</div>
+			  </div>
+			  
+			  <div id="footer">
+				  <div class="container">
+					  <div class="row">
+						  <div class="col-lg-4">
+						  </div>
+						  
+						  <div class="col-lg-4">
+							  <h4>My Links</h4>
+							  <p>
+								<a href="mailto:mikejlyh@gmail.com">email</a>
+								<a href="https://github.com/mikeli11">github.com/mikeli11</a>
+								<a href="#">Twitter</a><br/>
+							  </p>
+						  </div>
+						  
+						  <div class="col-lg-4">
+							  <h4>About Mike</h4>
+						  </div>
+					  
+					  </div>
+				  
+				  </div>
+			  </div>
+			  
+			  <script src="assets/js/bootstrap.min.js"></script>
 		</body>
 	</html>
