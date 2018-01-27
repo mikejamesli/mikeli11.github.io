@@ -1,6 +1,4 @@
 name: Mike Li
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-url: "https://mikeli11.github.io" 
-plugins:
-  - jekyll-sitemap
+
