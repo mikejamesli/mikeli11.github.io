@@ -9,12 +9,22 @@
 
  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+ body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+    /* thank you Erik J - negate effect of float*/
+  }
+
  body {
        background-color: #ffffff;
        font-family: 'Montserrat', sans-serif;
      font-weight: 400;
      font-size: 14px;
      color: #555;
+     height: 100%;
  
      -webkit-font-smoothing: antialiased;
      -webkit-overflow-scrolling: touch;
@@ -151,7 +161,21 @@
  #footer {
      background-color: #2f2f2f;
      padding-top: 20px;
+     margin-top: -180px;
+     /* negative value of footer height */
+     height: 180px;
+     clear: both;
  }
+
+ #main {
+    overflow: auto;
+    padding-bottom: 180px;
+    /* must be same height as the footer */
+  }
+
+ #wrap {
+    min-height: 100%;
+  }
  
  #footer p {
      color: white;
